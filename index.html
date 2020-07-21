@@ -9,32 +9,43 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <!-- <style>
+        [data-aos="fade-right"] {
+            transition-duration: 6s;
+        }
+    </style> -->
     
   
 </head>
 <body>
 
-    <div>
+    <!--First Page-->
+    <div class="section-1">
         <div class="left">
             <div class="left-lines">
-                <img src="images/line1.png" alt="" id="line1">
-                <img src="images/line2.png" alt="" id="line2">
-                <img src="images/line3.png" alt="" id="line3">
+                <img src="/images/line1.png" alt="" id="line1">
+                <img src="/images/line2.png" alt="" id="line2">
+                <img src="/images/line3.png" alt="" id="line3">
             </div>
             
-            <div class="left-content">
+            <div class="left-content" data-aos="zoom-in">
                 <p>Welcome To</p>
             </div>
     
             <div class="option-left">
                 
-                <a class="ripple-button-left"><div class="wave-left"></div>Portfolio</a>
+                <a href="#portfolio" class="ripple-button-left" data-aos="fade-left" data-aos-delay="1500" data-aos-duration="6000"><div class="wave-left"></div>Portfolio</a>
                 
             </div>
         </div>
     
         <div class="right">
-            <div class="right-content">
+            <div class="right-content" data-aos="zoom-in">
                 <p>My Portfolio</p>
             </div>
     
@@ -44,14 +55,14 @@
             </div> -->
     
             <div class="right-lines">
-                <img src="images/line4.png" alt="" id="line4">
-                <img src="images/line5.png" alt="" id="line5">
-                <img src="images/line6.png" alt="" id="line6">
+                <img src="/images/line4.png" alt="" id="line4">
+                <img src="/images/line5.png" alt="" id="line5">
+                <img src="/images/line6.png" alt="" id="line6">
             </div>
     
             <div class="option-right">
             
-                <a class="ripple-button-right" ><div class="wave-right"></div>Showcase</a>
+                <a href="#showcase" class="ripple-button-right" data-aos="fade-right" data-aos-delay="1500" data-aos-duration="6000"><div class="wave-right"></div>Showcase</a>
                     
                 
             </div>
@@ -59,21 +70,200 @@
         </div>
 
     </div>
-   
-    <div>
-        <img src="images/background1.png" alt="">
+
+    <!--Second Page-->
+    <div class="section-2">
+
+        <div class="top-border" style="padding-bottom: 20px;">
+            <span style="float: right;"><img src="/images/border2.png" alt="" width="100%"></span>
+            <span style="float: right;"><img src="/images/border1.png" alt=""></span>
+        </div>
+
+        <!-- <p>
+            <span class="background-font" style="font-family: 'Monoton', cursive; font-size: 10em; position: absolute; padding: 100px; color: rgba(0,0,0,0.02);">00111</span>
+            <br><br>
+            <span class="background-font" style="font-family: 'Monoton', cursive; font-size: 10em; position: absolute; padding-top: 20%; padding-left: 600px;color: rgba(0, 0, 0, 0.02); transform: rotate(90deg); margin-top: 20px;">00110</span>
+        </p> -->
+        
+
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="intro-text col-12">
+                     <p style="color: #E24040; font-size: 60px;margin-top: 60px; letter-spacing: 5px; text-transform: uppercase;" data-aos="fade-up">About Me</p>
+                 </div>
+            </div>
+            <div class="row justify-content-center" style="margin-top: 5%">
+                <div class="col-10 col-md-6" data-aos="fade-up"
+                data-aos-duration="2000">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <h2>Download My Resume</h2>
+                                
+                                <p class="hide-this">
+                                    Hello, I'm Moumita Sen. I'm an aspiring web developer. I'm hardworking, self motivated, creative, self taught person who loves to solve problem and learn new technologies. Currently looking for job/internship/freelancing.
+                                </p>
+                                <p class="show-this">
+                                    Want to know more about me?
+                                </p>
+                                <a href="/resume/Resume_MoumitaSen.pdf" download>Download</a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+       
+
+        <div class="side-border">
+            <span><img src="/images/border5.png" alt=""></span>
+        </div>
+        <!-- <div class="bottom-border">
+            <span style="float: left;"><img src="/images/border3.png" alt=""></span>
+        </div> -->
+
     </div>
 
-    
+    <!-- <span style="font-family: 'Monoton', cursive; font-size: 10em; position: absolute;  color: rgba(0,0,0,0.02); right: 0; top: 20px">11111</span> -->
 
+    <!--Third Page-->
+    <div class="section-3" id="portfolio">
+        <div class="container">
+            <div class="intro-text col-12 text-right">
+                <p style="color: #E24040; font-size: 60px;margin-top: 60px; letter-spacing: 5px; text-transform: uppercase;" data-aos="fade-up">Skill Sets</p>
+            </div>
+
+            <div class="skills">
+                <li data-aos="fade-up"> 
+                    <h3>HTML5</h3>
+                    <span class="bar"><span class="html" data-aos="fade-right" data-aos-delay="1000"></span></span>
+                </li>
+                <li data-aos="fade-up">
+                    <h3>CSS3</h3>
+                    <span class="bar"><span class="css3" data-aos="fade-right" data-aos-delay="1000"></span></span>
+                </li>
+                <li data-aos="fade-up">
+                    <h3>BOOTSTRAP 4</h3>
+                    <span class="bar"><span class="bootstrap4" data-aos="fade-right" data-aos-delay="1000"></span></span>
+                </li>
+                <li data-aos="fade-up">
+                    <h3>Javascript</h3>
+                    <span class="bar"><span class="javascript" data-aos="fade-right" data-aos-delay="1000"></span></span>
+                </li>
+                <li data-aos="fade-up">
+                    <h3>JQuery</h3>
+                    <span class="bar"><span class="jquery" data-aos="fade-right" data-aos-delay="1000"></span></span>
+                </li>
+                <li data-aos="fade-up">
+                    <h3>MySql</h3>
+                    <span class="bar"><span class="mysql" data-aos="fade-right" data-aos-delay="1000"></span></span>
+                </li>
+                <li data-aos="fade-up">
+                    <h3>PHP</h3>
+                    <span class="bar"><span class="php" data-aos="fade-right" data-aos-delay="1000"></span></span>
+                </li>
+                <li data-aos="fade-up">
+                    <h3>Wordpress</h3>
+                    <span class="bar"><span class="wordpress" data-aos="fade-right" data-aos-delay="1000"></span></span>
+                </li>
+                <li data-aos="fade-up">
+                    <h3>AngularJS</h3>
+                    <span class="bar"><span class="angularjs" data-aos="fade-right" data-aos-delay="1000"></span></span>
+                </li>
+                <li data-aos="fade-up">
+                    <h3>React</h3>
+                    <span class="bar"><span class="react" data-aos="fade-right" data-aos-delay="1000"></span></span>
+                </li>
+            </div>
+
+        </div>
+       
+    </div>
+    
+    <!--Fourth Page-->
+    <div class="section-4" id="showcase">
+
+        <div class="container">
+            <div class="intro-text col-12 text-right">
+                <p style="color: #E24040; font-size: 60px;margin-top: 60px; letter-spacing: 5px; text-transform: uppercase;" data-aos="fade-up">Showcase</p>
+            </div>
+
+            <div class="row">
+
+
+                <div class="col-12 col-md-4">
+                    <div class="card text-center" data-aos="fade-up">
+
+                        <div class="front">
+                            <img src="/images/xavotsav.gif" alt="" width="100%" height="100%">
+                            <p>Xavotsav</p>
+                        </div>
+
+                        <div class="back text-center">
+                            <div class="back-content">
+                                <h2>Xavotsav</h2>
+                                <p>HTML,CSS,Javascript</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-4">
+                    <div class="card text-center" data-aos="fade-up" data-aos-delay="500">
+
+                        <div class="front">
+                            <img src="/images/exabyte.gif" alt="" width="100%" height="100%">
+                            <p>Exabyte</p>
+                        </div>
+
+                        <div class="back text-center">
+                            <div class="back-content">
+                                <h2>Exabyte</h2>
+                                <p>HTML,CSS,Javascript</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card text-center" data-aos="fade-up" data-aos-delay="1000">
+
+                        <div class="front">
+                            <img src="/images/sanvi.gif" alt="" width="100%" height="100%">
+                            <p>Sanvi Essentials</p>
+
+                        </div>
+
+                        <div class="back text-center">
+                            <div class="back-content">
+                                <h2>Sanvi Essentials</h2>
+                                <p>HTML,CSS,Javascript,JQuery,Ajax</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> 
 
 
     <!-- JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    <script src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script>
+    <script src="/js/main.js"></script>
 
-    <script src="js/main.js"></script>
+    <script>
+        AOS.init({
+            duration: 2000
+        });
+
+        
+    </script>
 
 </body>
 </html>
