@@ -1,12 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Orbitron', sans-serif; */
+/* font-family: 'Monoton', cursive; */
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;; 
 }
 
+a, a:active , a:visited{
+    color: black !important;
+}
+
+.section-1 {
+    height: 100vh;
+}
 
 /*Left portion and right portion*/
 
@@ -17,13 +29,24 @@ body {
 
 .left {
     float: left;
+    background-color: #f0dead3d;
+    /* border-right: 10px solid transparent; */
+
 }
 
 .right {
     float: right;
     /* background: linear-gradient(180deg,#EF1D25,#780F13); */
-    background: linear-gradient(180deg,#ac2299,#420544);
+    /* background: linear-gradient(180deg,#ac2299,#420544); */
+    /* background: linear-gradient(120deg,#E24040,#991c1e); */
     transition-duration: 0.5s;
+    /* border-top: 100px solid red;
+    border-left: 100px solid transparent; */
+    border-bottom: 100vh solid #E24040;
+    border-left: 10px solid transparent;
+    /* background-image: url('/images/back.gif'); */
+    background-size: cover;
+    background-repeat: no-repeat;
 
 }
 
@@ -31,16 +54,20 @@ body {
     float: right;
     padding-right: 10px;
     color: #707070;
+    
 }
 
 .right-content {
     padding-left: 10px;
     float: left;
+  
 }
 
 .left-content , .right-content {
     font-size: 45px;
     padding-top: 270px ;
+    font-family: 'Orbitron', sans-serif !important; 
+
 }
 
 /* .right:hover {
@@ -54,6 +81,7 @@ body {
 /*Left Lines*/
 
 .left-lines {
+    /* position: fixed; */
     float: left;
     margin-left: 50px;
 }
@@ -99,10 +127,11 @@ body {
 /*Right lines*/
 
 .right-lines {
-    position: fixed;
-    right: 0;
-    /* float: right; */
-    margin-right: 30px;
+    /* position: fixed; */
+    margin-right: 20px;
+    /* right: 0; */
+    float: right;
+    /* padding-left: 150px !important; */
 }
 
 .right-lines img {
@@ -194,7 +223,7 @@ a:hover {
 }
 
 .ripple-button-right:hover > .wave-right, .ripple-button-left:hover > .wave-left {
-    animation: ripple-in 1s;
+    animation: ripple-in 2s;
 }
 
 /* .ripple-button-left:hover + .right {
@@ -248,6 +277,16 @@ a:hover {
             height:60px;
             bottom:6px;
         }
+
+        .background-font{
+            font-size: 4em;
+        }
+    }
+
+    @media screen and (min-width: 440px) {
+        .section-2 {
+            height: 90vh !important;
+        }
     }
 
     @media screen and (max-width: 490px) {
@@ -283,4 +322,332 @@ a:hover {
             left: 0px;
         }
 
+        .intro-text p  {
+            font-size: 20px !important;
+        }
+
+        .background-font{
+            font-size: 1em !important;
+        }
+
+        /* .section-2 .card {
+            height: 600px !important;
+        } */
+
+        .section-2 .card h2 {
+            font-size: 23px;
+        }
+
+        .section-2 .card p {
+            font-size: 15px;
+        }
+
+        /* .section-3 {
+            padding-top: 200px;
+        } */
+
+        /* .section-3 .intro-text {
+            margin-top: 14rem !important;
+        
+        } */
     }
+
+
+/*Section 2*/
+.section-2 {
+    /* background-image: url("/images/backgroundsec2.png"); */
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120vh;
+    background-color: #f0dead3d;
+
+}
+
+.intro-text {
+    font-family: 'Orbitron', sans-serif !important; 
+}
+
+.section-2 .card {
+    border: none;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 400px; */
+    padding: 40px;
+    padding-bottom: 40px;
+    margin-top: 20px;
+    
+}
+
+.section-2 .card h2 {
+    color: rgba(0,0,0,0.5);
+    text-transform: uppercase;
+    opacity: 0;
+    transform: translateY(-40px);
+    transition-duration: 0.9s;
+}
+
+.section-2 .card:hover  h2 {
+    opacity: 1;
+    transform: translateY(-10px);
+}
+
+/*
+.section-2 .card .show-this {
+    font-size: 30px;
+    transition-duration: 0.3s;
+}
+
+.section-2 .card:hover .show-this {
+    visibility: hidden;
+}
+
+.section-2 .card .hide-this {
+    visibility: hidden;
+    transition-duration: 0.02s;
+}
+
+.section-2 .card:hover .hide-this {
+    visibility: visible;
+
+} */
+
+.section-2 .card a {
+    position: relative;
+    display: inline-block;
+    /* border: 1px solid #E24040; */
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    opacity: 0;
+    background-color: transparent;
+    transform: translateY(40px);
+    transition-duration: 0.9s;
+
+}
+
+.section-2 .card:hover a {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section-2 .card a:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: transparent;
+    z-index: -1;
+    width: 0px;
+    transition-duration: 1s;
+}
+
+.section-2 .card a:hover:after {
+    border: 1px solid #E24040;
+    width: 115px;
+    /* background: #E24040; */
+
+}
+
+.section-2 .card:before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: -4px;
+    right: -4px;
+    bottom: 30px;
+    background: #E24040;
+    z-index: -1;
+    transform: translateY(20deg);
+    transition-duration: 0.5s;
+
+}
+
+.section-2 .card:hover:before {
+    top: 0px;
+    left: -8px;
+    right: -8px;
+    bottom: 0px;
+}
+
+.section-2 .card::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: #E24040;
+    z-index: -2;
+    transform: skew(0);
+    transition-duration: 0.5s;
+}
+
+.section-2 .card:hover:after {
+    top: 120px;
+    left: -20px;
+    right: -20px;
+    bottom: 120px;
+    transform: skew(3deg,-10deg);
+}
+
+/*Section 3*/
+.section-3 {
+    padding-top: 10px;
+    height: 200vh;
+    background-color: #f0dead3d;
+}
+
+
+.skills {
+    /* width: 500px; */
+    margin: 60px auto;
+    padding: 20px;
+    color: #E24040;
+}
+
+.skills li {
+    margin: 20px 0;
+    list-style: none;
+    padding: 10px;
+}
+
+.bar {
+    background: rgba(255,255,255,0.5);
+    display: block;
+    height: 25px;
+    border: 1px solid #E24040;
+    overflow: hidden;
+    /* box-shadow: 0 0 5px #E24040; */
+}
+
+.bar span {
+    margin: 4px;
+    height: 15px;
+    float: left;
+    background: #E24040;
+}
+
+.html {
+    width: 90%;
+}
+
+.css3 {
+    width: 80%;
+}
+
+.bootstrap4 {
+    width: 84%;
+}
+
+.javascript {
+    width: 70%;
+}
+
+.jquery {
+    width: 65%;
+}
+
+.mysql {
+    width: 60%;
+}
+
+.php {
+    width: 60%;
+}
+
+.wordpress {
+    width: 65%;
+}
+
+.angularjs {
+    width: 60%;
+}
+
+.react {
+    width: 30%;
+}
+
+.section-4 {
+    padding-top: 20px;
+    margin-bottom: 2rem;
+    height: 200vh;
+    background-color: #f0dead3d;
+}
+
+/* .section-4 .intro-text {
+    margin-top: 15rem;
+} */
+
+.section-4 .card {
+    cursor: pointer;
+    width: 300px;
+    height: 250px;
+    margin: 20px auto;
+    border: none;
+    background-color: transparent !important;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+}
+
+.section-4 .card img {
+    height: 100%;
+}
+
+
+.section-4 .row {
+    margin-top: 50px;
+}
+
+.front, .back {
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform .6s linear;
+}
+
+.front {
+    transform: perspective(300px) rotateX(0deg);
+}
+
+.back {
+    width: 100%;
+    height: 100%;
+    background: #E24040;
+    box-shadow: 0px 0px 50px 10px inset rgba(0,0,0,0.2);
+    /* background-color: rgba(0,0,0,0.5); */
+    transform: perspective(300px) rotateX(180deg);
+}
+
+.section-4 .card:hover > .front {
+    /* transform: perspective(400px) rotateY(-180deg); */
+    transform: perspective(300px) rotateX(-180deg);
+
+}
+
+
+.section-4 .card:hover > .back {
+    transform: perspective(300px) rotateX(0deg);
+
+}
+
+.front p {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #E24040;
+    text-shadow: 0px 20px 1px inset rgba(0,0,0,0.2);
+}
+
+.back-content {
+    margin-top: 30px;
+    color: white;
+}
+
+.back-content p {
+    font-size: 15px;
+}
+
+
