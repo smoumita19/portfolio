@@ -448,7 +448,7 @@ a:hover {
 
 .section-2 .card a:hover:after {
     border: 1px solid #E24040;
-    width: 115px;
+    width: 108px;
     /* background: #E24040; */
 
 }
@@ -574,8 +574,7 @@ a:hover {
 
 .section-4 {
     padding-top: 20px;
-    margin-bottom: 2rem;
-    height: 200vh;
+    height: 80vh;
     background-color: #f0dead3d;
 }
 
@@ -650,4 +649,21 @@ a:hover {
     font-size: 15px;
 }
 
+.section-5 {
+    padding-top: 20px;
+    height: 80vh;
+    background: url('/images/footer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f0dead3d;
+}
 
+.section-5 .row {
+    margin-top: 15rem;
+    color: white;
+}
+
+.footer-content {
+    margin-top: 80px;
+    color: white;
+}
