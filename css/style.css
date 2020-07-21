@@ -652,7 +652,7 @@ a:hover {
 .section-5 {
     padding-top: 20px;
     height: 80vh;
-    background: url('images/footer.png');
+    background: url('../images/footer.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #f0dead3d;
