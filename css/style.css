@@ -9,7 +9,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;; 
+    font-family: 'Montserrat', sans-serif;
+    /* background: linear-gradient(to left, black,rgba(0, 0, 0, 0.432), black); */
 }
 
 a, a:active , a:visited{
@@ -29,7 +30,7 @@ a, a:active , a:visited{
 
 .left {
     float: left;
-    background-color: #f0dead3d;
+    /* background-color: #f0dead3d; */
     /* border-right: 10px solid transparent; */
 
 }
@@ -42,7 +43,7 @@ a, a:active , a:visited{
     transition-duration: 0.5s;
     /* border-top: 100px solid red;
     border-left: 100px solid transparent; */
-    border-bottom: 100vh solid #E24040;
+    border-bottom: 100vh solid #ed4754;
     border-left: 10px solid transparent;
     /* background-image: url('/images/back.gif'); */
     background-size: cover;
@@ -284,9 +285,9 @@ a:hover {
     }
 
     @media screen and (min-width: 440px) {
-        .section-2 {
+        /* .section-2 {
             height: 90vh !important;
-        }
+        } */
     }
 
     @media screen and (max-width: 490px) {
@@ -329,9 +330,9 @@ a:hover {
         .background-font{
             font-size: 1em !important;
         }
-
-        /* .section-2 .card {
-            height: 600px !important;
+/* 
+        .section-2  {
+            height: 115vh !important;
         } */
 
         .section-2 .card h2 {
@@ -346,21 +347,37 @@ a:hover {
             padding-top: 200px;
         } */
 
-        /* .section-3 .intro-text {
-            margin-top: 14rem !important;
-        
+        /* .section-4 {
+            height: 160vh !important; 
         } */
+
+        
     }
 
+    @media screen and (max-width: 320px) {
+        .left-lines, .right-lines {
+            display: none;
+        }
+    }
 
+    @media screen and (max-width: 375px) {
+        .skills h5 {
+            font-size: 15px !important;
+        }
+    }
+
+    /* .section-3 .intro-text {
+        margin-top: 5vh !important;
+    
+    } */
 /*Section 2*/
 .section-2 {
     /* background-image: url("/images/backgroundsec2.png"); */
     /* background-position: center; */
     background-repeat: no-repeat;
     background-size: cover;
-    height: 120vh;
-    background-color: #f0dead3d;
+    /* height: 100vh; */
+    /* background-color: #f0dead3d; */
 
 }
 
@@ -378,6 +395,8 @@ a:hover {
     padding: 40px;
     padding-bottom: 40px;
     margin-top: 20px;
+    /* margin-bottom: 20px; */
+
     
 }
 
@@ -460,7 +479,7 @@ a:hover {
     left: -4px;
     right: -4px;
     bottom: 30px;
-    background: #E24040;
+    background: #ed4754;
     z-index: -1;
     transform: translateY(20deg);
     transition-duration: 0.5s;
@@ -481,7 +500,7 @@ a:hover {
     left: 0px;
     right: 0px;
     bottom: 0px;
-    background: #E24040;
+    background: #ed4754;
     z-index: -2;
     transform: skew(0);
     transition-duration: 0.5s;
@@ -496,18 +515,17 @@ a:hover {
 }
 
 /*Section 3*/
-.section-3 {
-    padding-top: 10px;
-    height: 200vh;
-    background-color: #f0dead3d;
-}
-
+/* .section-3 {
+    padding-top: 10px; */
+    /* height: 100vh; */
+    /* background-color: #f0dead3d; */
+/* } */
 
 .skills {
     /* width: 500px; */
-    margin: 60px auto;
-    padding: 20px;
-    color: #E24040;
+    /* margin: 60px auto 0; */
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.76);
 }
 
 .skills li {
@@ -519,17 +537,17 @@ a:hover {
 .bar {
     background: rgba(255,255,255,0.5);
     display: block;
-    height: 25px;
-    border: 1px solid #E24040;
+    height: 10px;
+    border: 1px solid #ed4754;
     overflow: hidden;
     /* box-shadow: 0 0 5px #E24040; */
 }
 
 .bar span {
-    margin: 4px;
-    height: 15px;
+    margin: 1.5px;
+    height: 5.5px;
     float: left;
-    background: #E24040;
+    background: #ed4754;
 }
 
 .html {
@@ -537,7 +555,7 @@ a:hover {
 }
 
 .css3 {
-    width: 80%;
+    width: 85%;
 }
 
 .bootstrap4 {
@@ -553,11 +571,11 @@ a:hover {
 }
 
 .mysql {
-    width: 60%;
+    width: 50%;
 }
 
 .php {
-    width: 60%;
+    width: 50%;
 }
 
 .wordpress {
@@ -573,9 +591,10 @@ a:hover {
 }
 
 .section-4 {
-    padding-top: 20px;
-    height: 80vh;
-    background-color: #f0dead3d;
+    padding-bottom: 10vh;
+    /* padding-top: 20px;
+    height: 100vh;
+    background-color: #f0dead3d; */
 }
 
 /* .section-4 .intro-text {
@@ -615,9 +634,8 @@ a:hover {
 .back {
     width: 100%;
     height: 100%;
-    background: #E24040;
+    background: #ed4754;
     box-shadow: 0px 0px 50px 10px inset rgba(0,0,0,0.2);
-    /* background-color: rgba(0,0,0,0.5); */
     transform: perspective(300px) rotateX(180deg);
 }
 
@@ -651,11 +669,9 @@ a:hover {
 
 .section-5 {
     padding-top: 20px;
-    height: 80vh;
     background: url('/images/footer.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #f0dead3d;
 }
 
 .section-5 .row {
